@@ -1,6 +1,5 @@
 pipeline {
     agent any
-//updated
     triggers {
         pollSCM('H/5 * * * *')
     }
@@ -11,6 +10,7 @@ pipeline {
                 echo "Task: Build the code using Maven to compile and package the application."
                 echo "Tool: Maven"
             }
+            //updated
         }
         stage('Unit and Integration Tests') {
             steps {
